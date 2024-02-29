@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import DynamicText from "@/components/Ui/dynamic-text";
 
 const Homepage = () => {
   return (
@@ -7,14 +8,14 @@ const Homepage = () => {
       descriptionSeo="A Serasa é lider em dados e soluções para empresas. Serasa Score de crédito,Consulta CNPJ, Proteção Antifraude e mais. Confira!"
     >
       <div>
-        <p className="display">Abc</p>
-        <p className="heading-l">Abc</p>
-        <p className="heading-m">Abc</p>
-        <p className="heading-s">Abc</p>
-        <p className="heading-xs">Abc</p>
-        <p className="sub-heading">Abc</p>
-        <p className="body-bold">Abc</p>
-        <p className="body-regular">Abc</p>
+        <DynamicText ariaLabel="" level="1" title="">Abc</DynamicText>
+        <DynamicText ariaLabel="" level="2" title="">Abc</DynamicText>
+        <DynamicText ariaLabel="" level="3" title="">Abc</DynamicText>
+        <DynamicText ariaLabel="" level="4" title="">Abc</DynamicText>
+        <DynamicText ariaLabel="" level="5" title="">Abc</DynamicText>
+        <DynamicText ariaLabel="" level="6" title="">Abc</DynamicText>
+        <DynamicText ariaLabel="" level="p-bold" title="">Abc</DynamicText>
+        <DynamicText ariaLabel="" level="p-regular" title="">Abc</DynamicText>
       </div>
     </Layout>
   )
