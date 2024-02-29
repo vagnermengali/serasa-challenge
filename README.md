@@ -2,45 +2,68 @@
 
 ## Desafio 1 - Tipografia
 
-Este documento apresenta as diretrizes para a utilização dos componentes de texto e cores em um projeto desenvolvido.
+Este documento apresenta as diretrizes para a utilização dos componentes de texto e cores no projeto desenvolvido.
 
-## Componentes de Texto
+## Componente de Texto
 
-Para garantir consistência na estilização dos textos, foram definidos os seguintes componentes:
+O componente `DynamicText` é uma ferramenta versátil para exibir texto com diferentes estilos e níveis de hierarquia.
 
-- **h1**: Utilize a classe `.display`.
-- **h2**: Utilize a classe `.heading-l`.
-- **h3**: Utilize a classe `.heading-m`.
-- **h4**: Utilize a classe `.heading-s`.
-- **h5**: Utilize a classe `.display`.
-- **h6**: Utilize a classe `.sub-heading`.
-- **p bold**: Utilize a classe `.body-bold`.
-- **p regular**: Utilize a classe `.body-regular`.
+## Props
+
+- `level`: Define o tipo de elemento HTML para renderizar o texto. Os valores possíveis são:
+  - `1` para `<h1>`
+  - `2` para `<h2>`
+  - `3` para `<h3>`
+  - `4` para `<h4>`
+  - `5` para `<h5>`
+  - `6` para `<h6>`
+  - `p` para `<p>`
+  - `p-bold` para `<p>` em negrito
+  - `span` para `<span>`
+  - `span-bold` para `<span>` em negrito
+
+- `title`: Título opcional para adicionar ao texto.
+
+- `ariaLabel`: Rótulo ARIA opcional para acessibilidade.
+
+- `className`: Classe CSS adicional para estilização personalizada.
 
 ## Cores
 
-As cores podem ser aplicadas a qualquer texto, bem como a outras propriedades do CSS, tais como background, bordas, filtros, etc. As opções de cores disponíveis são:
+Você pode aplicar diferentes cores ao texto, bem como a outras propriedades do CSS, tais como background, bordas, filtros, etc, utilizando as seguintes classes:
 
-- **Magenta**: Utilize a classe `.magenta`.
-- **Dark High**: Utilize a classe `.text-dark-high`.
-- **Dark Medium**: Utilize a classe `.text-dark-medium`.
-- **Dark Low**: Utilize a classe `.text-dark-low`.
-- **Light Light**: Utilize a classe `.text-light-light`.
-- **Light Solid**: Utilize a classe `.text-light-solid`.
+- **Magenta**: `.magenta`
+- **Dark High**: `.text-dark-high`
+- **Dark Medium**: `.text-dark-medium`
+- **Dark Low**: `.text-dark-low`
+- **Light Light**: `.text-light-light`
+- **Light Solid**: `.text-light-solid`
 
-## Exemplos de Utilização
+## Exemplo de Utilização
 
-A seguir estão alguns exemplos de como utilizar os componentes de texto e as cores disponíveis:
+Suponha que você queira exibir um cabeçalho em negrito com o título "Bem-vindo" e um parágrafo regular com o texto "Este é um exemplo de utilização do componente DynamicText." em sua aplicação. Você também deseja destacar uma parte desse texto com a cor magenta.
 
-```html
-<!-- Exemplo de utilização de h1 com cor magenta -->
-<h1 className="display magenta">Título Principal</h1>
+```jsx
+import React from 'react';
+import DynamicText from './DynamicText';
 
-<!-- Exemplo de utilização de h2 com cor dark-high -->
-<h2 className="heading-l text-dark-high">Subtítulo</h2>
+const WelcomeMessage = () => {
+  return (
+    <div>
+      {/* Cabeçalho em negrito com título "Bem-vindo" */}
+      <DynamicText level="1" title="Bem-vindo" ariaLabel="Título de boas-vindas" className="text-dark-high">
+        Bem-vindo
+      </DynamicText>
 
-<!-- Exemplo de utilização de p regular com cor text-light-light -->
-<p className="body-regular text-light-light">Este é um parágrafo com texto regular.</p>
+      {/* Parágrafo regular com destaque em magenta */}
+      <DynamicText level="p" title="Texto regular" ariaLabel="Texto de exemplo" className="magenta">
+        Este é um exemplo de utilização do componente DynamicText.
+      </DynamicText>
+    </div>
+  );
+};
 
-<!-- Exemplo de utilização de p bold com cor text-dark-medium -->
-<p className="body-bold text-dark-medium">Este é um parágrafo com texto em negrito.</p>
+export default WelcomeMessage;
+```
+
+## Desafio 2 - Tipografia

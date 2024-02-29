@@ -1,6 +1,7 @@
 export interface DynamicTextInterface {
     level: string;
     children: string;
-    ariaLabel: string;
-    title: string;
+    ariaLabel?: string;
+    title?: string;
+    className?: string;
 }
