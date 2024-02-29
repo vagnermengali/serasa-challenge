@@ -2,7 +2,7 @@
 
 [![Banner](https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D1%26deploymentId%3Ddpl_JE8916PvC4VdHq4245L4QzQ6PkED%26teamId%3Dvagnermengali%26withStatus%3D1&w=640&q=75&dpl=dpl_6Mm9AZy2cSdaqsSX7cTb3ZrP6y7f)](https://serasa-challenge-vagnermengali.vercel.app/)
 
-Este é um portfólio criado para fins de estudo em Next.js, TypeScript, Tailwind CSS, @emailjs/browser, Swiper, React Hook Form, Framer Motion, React tsparticles, Yup, SweetAlert2 e React Countup.
+Este é um teste técnico feito em Next.js, TypeScript, Tailwind CSS, React Hook Form, Framer Motion, React tsparticles e Yup.
 
 ## Tecnologias Utilizadas
 
