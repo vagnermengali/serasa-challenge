@@ -1,50 +1,46 @@
 # Desafio Serasa
 
-[![Banner](https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D1%26deploymentId%3Ddpl_JE8916PvC4VdHq4245L4QzQ6PkED%26teamId%3Dvagnermengali%26withStatus%3D1&w=640&q=75&dpl=dpl_6Mm9AZy2cSdaqsSX7cTb3ZrP6y7f)](https://serasa-challenge-vagnermengali.vercel.app/)
+## Desafio 1 - Tipografia
 
-Este é um teste técnico feito em Next.js, TypeScript, Tailwind CSS, React Hook Form, Framer Motion, React tsparticles e Yup.
+Este documento apresenta as diretrizes para a utilização dos componentes de texto e cores em um projeto desenvolvido.
 
-## Tecnologias Utilizadas
+## Componentes de Texto
 
-- **Next.js**: Um framework React para construir aplicações web.
-- **TypeScript**: Um superset do JavaScript que adiciona tipagem estática ao código.
-- **Tailwind CSS**: Um framework CSS de utilidade em primeiro lugar para desenvolvimento rápido e flexível.
-- **React Hook Form**: Uma biblioteca para formulários em React, com suporte a hooks.
-- **Yup**: Uma biblioteca de validação de esquema JavaScript.
+Para garantir consistência na estilização dos textos, foram definidos os seguintes componentes:
 
-## Rotas Disponíveis
+- **h1**: Utilize a classe `.display`.
+- **h2**: Utilize a classe `.heading-l`.
+- **h3**: Utilize a classe `.heading-m`.
+- **h4**: Utilize a classe `.heading-s`.
+- **h5**: Utilize a classe `.display`.
+- **h6**: Utilize a classe `.sub-heading`.
+- **p bold**: Utilize a classe `.body-bold`.
+- **p regular**: Utilize a classe `.body-regular`.
 
-- **/**: Página inicial.
+## Cores
 
-## Instalação
+As cores podem ser aplicadas a qualquer texto, bem como a outras propriedades do CSS, tais como background, bordas, filtros, etc. As opções de cores disponíveis são:
 
-Para executar este projeto localmente, siga as instruções abaixo:
+- **Magenta**: Utilize a classe `.magenta`.
+- **Dark High**: Utilize a classe `.text-dark-high`.
+- **Dark Medium**: Utilize a classe `.text-dark-medium`.
+- **Dark Low**: Utilize a classe `.text-dark-low`.
+- **Light Light**: Utilize a classe `.text-light-light`.
+- **Light Solid**: Utilize a classe `.text-light-solid`.
 
-1. Clone o repositório:
+## Exemplos de Utilização
 
-   ```bash
-   git clone https://github.com/vagnermengali/serasa-challenge
+A seguir estão alguns exemplos de como utilizar os componentes de texto e as cores disponíveis:
 
-2. Acesse o diretório do projeto:
+```html
+<!-- Exemplo de utilização de h1 com cor magenta -->
+<h1 className="display magenta">Título Principal</h1>
 
-   ```bash
-   cd serasa-challenge
+<!-- Exemplo de utilização de h2 com cor dark-high -->
+<h2 className="heading-l text-dark-high">Subtítulo</h2>
 
-3. Instale as dependências:
+<!-- Exemplo de utilização de p regular com cor text-light-light -->
+<p className="body-regular text-light-light">Este é um parágrafo com texto regular.</p>
 
-   ```bash
-   yarn install
-
-4. Inicie o servidor de desenvolvimento:
-
-   ```bash
-   yarn dev
-
-5. Acesse a aplicação em seu navegador através da rota:
-
-   ```bash
-   http://localhost:3000/
-
-## Implantação
-
-Este projeto está disponível em: [https://serasa-challenge-vagnermengali.vercel.app/](https://serasa-challenge-vagnermengali.vercel.app/)
+<!-- Exemplo de utilização de p bold com cor text-dark-medium -->
+<p className="body-bold text-dark-medium">Este é um parágrafo com texto em negrito.</p>
