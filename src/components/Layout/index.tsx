@@ -15,7 +15,7 @@ const roboto = Roboto({
 
 const Layout = ({ titleSeo, descriptionSeo, children }: LayoutInterface) => {
   return (
-    <>
+    <div className="flex justify-between flex-col min-h-screen">
       <style jsx global>{`
         * {
               font-family: ${roboto.style.fontFamily};
@@ -27,7 +27,7 @@ const Layout = ({ titleSeo, descriptionSeo, children }: LayoutInterface) => {
         {children}
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 
