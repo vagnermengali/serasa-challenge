@@ -11,7 +11,14 @@ const Homepage = () => {
       descriptionSeo="A Serasa é lider em dados e soluções para empresas. Serasa Score de crédito,Consulta CNPJ, Proteção Antifraude e mais. Confira!"
     >
       <Form>
-        <Image src="" alt="" />
+        <Image
+          className="w-20 h-9"
+          src="/serasa-logo-full.svg"
+          alt="Ir para página inicial"
+          width={144}
+          height={60}
+          title={'Ir para página inicial'}
+        />
         <DynamicText ariaLabel="" level="p" title="" className="">Conte o quanto você está satisfeito com nossas serviços</DynamicText>
         <DynamicText ariaLabel="" level="p-bold" title="" className="">Marque de 1 à 5 estrelas</DynamicText>
         <p></p>
