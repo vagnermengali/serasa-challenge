@@ -1,7 +1,7 @@
 import React from 'react';
 import { DynamicTextInterface } from '@/interfaces/DynamicTextInterface';
 
-const DynamicTextComponent = ({ level = 'p', ariaLabel, title, children, className }: DynamicTextInterface) => {
+const DynamicText = ({ level = 'p', ariaLabel, title, children, className }: DynamicTextInterface) => {
     const isHeading = level !== 'p' && level !== 'span';
     const isBold = level === 'p-bold';
     const isSpan = level === 'span';
@@ -39,4 +39,4 @@ const DynamicTextComponent = ({ level = 'p', ariaLabel, title, children, classNa
     );
 };
 
-export default DynamicTextComponent;
+export default DynamicText;

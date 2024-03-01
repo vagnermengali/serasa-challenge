@@ -23,7 +23,7 @@ const Layout = ({ titleSeo, descriptionSeo, children }: LayoutInterface) => {
       `}</style>
       <Seo title={titleSeo} description={descriptionSeo} />
       <Header />
-      <main className="container m-auto px-4 py-8">
+      <main className="container mx-auto px-4 py-8 flex justify-center">
         {children}
       </main>
       <Footer />
