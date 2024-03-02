@@ -8,21 +8,20 @@ const Form = () => {
   const [comment, setComment] = useState('');
   const [isNameValid, setIsNameValid] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     console.log('Avaliação:', rating);
     console.log('Nome:', name);
     console.log('Comentário:', comment);
   };
 
-  const handleRating = (rate) => {
+  const handleRating = (rate: any) => {
     setRating(rate);
   };
 
-  const handleNameChange = (e) => {
+  const handleNameChange = (e: any) => {
     const newName = e.target.value;
     setName(newName);
-    // Verifica se o campo de nome está preenchido
     setIsNameValid(newName.trim().length > 0);
   };
 
