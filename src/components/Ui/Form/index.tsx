@@ -26,7 +26,7 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="rounded-lg bg-light-solid w-[390px] h-[506px] flex flex-col items-center justify-center p-6 shadow-lg">
+    <form onSubmit={handleSubmit} className="rounded-lg bg-light-solid w-[390px] h-auto flex flex-col items-center justify-center p-6 shadow-lg">
       <Image
         className="w-20 h-9 mb-4"
         src="/serasa-logo-full.svg"
@@ -62,34 +62,34 @@ const Form = () => {
           );
         })}
       </div>
-      <div className="flex flex-col mb-5">
+      <div className="flex flex-col mb-5 w-full">
         <label className='body-bold mb-2'>Nome</label>
         <input
           type="text"
           placeholder='Nome'
           required
-          className="w-52 p-2 border border-gray-300 ease duration-300 hover:border-magenta outline-magenta/0 outline focus:outline-magenta/50 outline-offset-0 outline-4 rounded-lg"
+          className="w-full p-3 border border-gray-300 ease duration-300 hover:border-magenta outline-magenta/0 outline focus:outline-magenta/50 outline-offset-0 outline-4 rounded-lg"
           value={name}
           onChange={handleNameChange}
         />
       </div>
-      <div className="flex flex-col mb-5">
+      <div className="flex flex-col mb-5 w-full">
         <label className='body-bold mb-2'>Comentário (Opcional)</label>
         <input
           type="text"
           placeholder='Comentário (Opcional)'
-          className="w-52 p-2 border border-gray-300 ease duration-300 hover:border-magenta outline-magenta/0 outline focus:outline-magenta/50 outline-offset-0 outline-4 rounded-lg"
+          className="w-full p-3 border border-gray-300 ease duration-300 hover:border-magenta outline-magenta/0 outline focus:outline-magenta/50 outline-offset-0 outline-4 rounded-lg"
           value={comment}
           onChange={(e) => setComment(e.target.value)}
         />
       </div>
-      <div className="text-center">
+      <div className="text-center w-full">
         <button
           id="button"
           role="button"
           aria-label="Enviar avaliação"
           type="submit"
-          className={`${isNameValid ? 'w-52 px-4 py-2 bg-magenta/90 text-light-light hover:bg-magenta' : 'w-52 px-4 py-2 bg-light-light text-dark-low '} body-bold sease duration-300 outline-magenta/0 outline focus:outline-magenta/50 outline-offset-0 outline-4 rounded-lg`}
+          className={`${isNameValid ? 'w-full p-3 bg-magenta/90 text-light-light hover:bg-magenta' : 'w-full p-3 bg-light-light text-dark-low '} body-bold sease duration-300 outline-magenta/0 outline focus:outline-magenta/50 outline-offset-0 outline-4 rounded-lg`}
           disabled={!isNameValid}
         >
           Enviar avaliação
