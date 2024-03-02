@@ -66,7 +66,7 @@ const WelcomeMessage = () => {
 export default WelcomeMessage;
 ```
 
-## Desafio 2 - Tipografia
+## Desafio 2 - Formulário
 
 Neste desafio, foi desenvolvido um formulário de avaliação utilizando o Design System da empresa. Ele conta com um campo de estrelas obrigatório para avaliação, um campo de nome obrigatório e um campo de comentário opcional. A aplicação foi projetada para ser responsiva, adaptando-se tanto a dispositivos desktop quanto a dispositivos móveis. A integração com a API `/rating` permite enviar os dados da avaliação, incluindo `name`, `rating` e `comment`. Todo o projeto foi concebido com foco em acessibilidade, garantindo que pessoas com diferentes tipos de deficiências (visuais, auditivas, motoras ou cognitivas) possam utilizar o formulário sem problemas. Isso foi possível graças à utilização de uma estrutura HTML semântica e às tecnologias `yup`, `react-hook-form` e `@hookform/resolvers`.
 
