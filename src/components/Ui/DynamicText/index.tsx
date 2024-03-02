@@ -1,37 +1,37 @@
-import React from 'react';
-import { DynamicTextInterface } from '@/interfaces/DynamicTextInterface';
+import React from "react";
+import { DynamicTextInterface } from "@/interfaces/DynamicTextInterface";
 
-const DynamicText = ({ level = 'p', ariaLabel, title, children, className }: DynamicTextInterface) => {
-    const isHeading = level !== 'p';
-    const isBold = level === 'p-bold';
+const DynamicText = ({ level = "p", ariaLabel, title, children, className }: DynamicTextInterface) => {
+    const isHeading = level !== "p";
+    const isBold = level === "p-bold";
     const ariaLevel = isHeading ? level : null;
-    const role = isHeading ? 'heading' : null;
+    const role = isHeading ? "heading" : null;
 
     const levelClassMap: { [key: string]: string } = {
-        '1': 'display',
-        '2': 'heading-l',
-        '3': 'heading-m',
-        '4': 'heading-s',
-        '5': 'heading-xs',
-        '6': 'sub-heading',
-        'p': 'body-regular',
-        'p-bold': 'body-bold'
+        "1": "display",
+        "2": "heading-l",
+        "3": "heading-m",
+        "4": "heading-s",
+        "5": "heading-xs",
+        "6": "sub-heading",
+        "p": "body-regular",
+        "p-bold": "body-bold"
     };
 
-    const Tag = isBold ? 'p' : isHeading ? `h${level}` : 'p';
+    const Tag = isBold ? "p" : isHeading ? `h${level}` : "p";
 
     const tagProps = {
         role,
-        'aria-label': ariaLabel,
-        'aria-level': ariaLevel,
+        "aria-label": ariaLabel,
+        "aria-level": ariaLevel,
         title,
-        className: `${levelClassMap[level] || ''} ${className || ''}`,
+        className: `${levelClassMap[level] || ""} ${className || ""}`,
     };
 
     const tagPropsTwo = {
-        'aria-label': ariaLabel,
+        "aria-label": ariaLabel,
         title,
-        className: `${levelClassMap[level] || ''} ${className || ''}`,
+        className: `${levelClassMap[level] || ""} ${className || ""}`,
     };
 
     return (
@@ -42,7 +42,7 @@ const DynamicText = ({ level = 'p', ariaLabel, title, children, className }: Dyn
                 </>
             ) : (
                 <>
-                    {React.createElement(Tag, tagPropsTwo, children)}
+                    {React.createElement(Tag, tagProps, children)}
                 </>
             )}
         </>

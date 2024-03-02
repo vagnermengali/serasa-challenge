@@ -7,10 +7,10 @@ import Footer from "@/components/Footer";
 import { LayoutInterface } from "@/interfaces/LayoutInterface";
 
 const roboto = Roboto({
-  weight: ['400', '700'],
-  style: ['normal'],
-  subsets: ['latin'],
-  display: 'swap',
+  weight: ["400", "700"],
+  style: ["normal"],
+  subsets: ["latin"],
+  display: "swap",
 })
 
 const Layout = ({ titleSeo, descriptionSeo, children }: LayoutInterface) => {

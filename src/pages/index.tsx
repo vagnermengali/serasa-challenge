@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import Form from "@/components/Ui/Form/index";
+import Form from "@/components/Form";
 
 const Homepage = () => {
   return (
