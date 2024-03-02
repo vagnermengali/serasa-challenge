@@ -150,3 +150,50 @@ Exemplo de uso:
 ---
 
 ## Desafio 3 - Análise do Blog
+
+Neste documento, realizaremos uma análise das tecnologias, frameworks, padrões de código, arquiteturas e práticas de desenvolvimento adotadas para otimizar a performance, acessibilidade e eficiência no desenvolvimento dos projetos no blog da Serasa.
+
+## Tecnologias Front-end
+- **Next.js:** Framework utilizado para renderização do lado do servidor (SSR) e geração de sites estáticos (SSG), oferecendo desempenho aprimorado.
+- **TypeScript:** Linguagem de programação que adiciona tipagem estática ao JavaScript, proporcionando maior segurança e manutenção do código.
+- **Tailwind CSS:** Framework de CSS utilitário que permite o desenvolvimento rápido e consistente de interfaces de usuário.
+
+## Tecnologias Back-end
+- **Node.js:** Plataforma que permite a execução de JavaScript no servidor, proporcionando eficiência e escalabilidade no desenvolvimento.
+- **Prisma.js com Next.js:** ORM moderno para interação com bancos de dados, integrado com o Next.js para facilitar o desenvolvimento.
+- **PostgreSQL:** Sistema de gerenciamento de banco de dados relacional, oferecendo confiabilidade e desempenho.
+
+## Arquitetura e Práticas de Desenvolvimento
+- **Component-Based Architecture (Arquitetura Baseada em Componentes):** Abordagem que preza pela criação de componentes independentes e reutilizáveis, promovendo modularidade e escalabilidade no desenvolvimento front-end.
+- **Test-Driven Development (TDD):** Prática de desenvolvimento que incentiva escrever testes automatizados antes do código de produção, garantindo a qualidade do software.
+
+## Ferramentas de DevOps
+- **Docker:** Plataforma para desenvolvimento, envio e execução de aplicativos em contêineres, proporcionando consistência entre os ambientes.
+- **Kubernetes:** Plataforma de orquestração de contêineres para automação de implantação, escala e gerenciamento de aplicativos.
+
+## Segurança
+- **HTTPS:** Protocolo de transferência de hipertexto seguro para comunicação entre cliente e servidor.
+- **JWT (JSON Web Tokens):** Método seguro de autenticação e autorização.
+- **OWASP Top 10:** Diretrizes para proteção contra as principais vulnerabilidades de segurança web.
+
+## Documentação: Utilização do Next.js com Tailwind CSS e Modelo Component-Based Architecture Front-end
+
+Nesta documentação, vamos abordar a utilização do Next.js em conjunto com o Tailwind CSS para desenvolvimento de aplicações full stack. O Next.js é uma ferramenta que oferece suporte tanto para o front-end quanto para o back-end, simplificando o gerenciamento de rotas e proporcionando uma experiência de desenvolvimento mais fluída.
+
+### Vantagens do Next.js:
+
+1. **Aplicação Full Stack:** Com o Next.js, é possível desenvolver tanto o front-end quanto o back-end da aplicação, tudo em um único framework.
+2. **Facilidade de Rotas:** O Next.js oferece um sistema de rotas simplificado, facilitando a navegação entre as páginas da aplicação.
+3. **Tailwind CSS:** A utilização do Tailwind CSS agrega muito à performance da aplicação, proporcionando estilos pré-configurados e uma abordagem baseada em utilitários que facilita o desenvolvimento.
+
+### Modelo Component-Based Architecture Front-end:
+
+A abordagem Component-Based Architecture (Arquitetura Baseada em Componentes) preza pela criação de componentes independentes e reutilizáveis, promovendo modularidade e escalabilidade no desenvolvimento front-end.
+
+### Boas Práticas e Acessibilidade:
+
+Ao utilizar o Next.js em conjunto com o Tailwind CSS e seguindo o modelo Component-Based Architecture Front-end, garantimos que o desenvolvimento siga as boas práticas e seja acessível a todos os usuários. Componentes padronizados e acessíveis facilitam a manutenção do código e proporcionam uma experiência de usuário melhorada.
+
+### Conclusão:
+
+A utilização do Next.js com Tailwind CSS e o modelo Component-Based Architecture Front-end proporciona uma base sólida para o desenvolvimento de aplicações web modernas e eficientes. Ao seguir esse padrão, garantimos uma experiência de desenvolvimento mais fluida e uma aplicação mais performática e acessível.
