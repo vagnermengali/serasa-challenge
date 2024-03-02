@@ -1,15 +1,16 @@
 # Desafio Serasa
 
 <div align="center">
-  Você pode acessar o deploy do projeto <a href="https://serasa-challenge-vagnermengali.vercel.app/">aqui</a>.
+  <a href="https://serasa-challenge-vagnermengali.vercel.app/">Deploy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://pagespeed.web.dev/analysis/https-serasa-challenge-vagnermengali-vercel-app/w69fzkwo7c?form_factor=desktop">Perfomace</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 
 ---
 
 <div align="center">
-  <a href="#desafio-1---tipografia">Desafio 1 - Tipografia</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="#desafio-2---formulário">Desafio 2 - Formulário</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="#desafio-3---análise-do-blog">Desafio 3 - Análise do Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#desafio-1---tipografia">Desafio 1 - Tipografia</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#desafio-2---formulário">Desafio 2 - Formulário</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#desafio-3---análise-do-blog">Desafio 3 - Análise do Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 
 ## Desafio 1 - Tipografia
