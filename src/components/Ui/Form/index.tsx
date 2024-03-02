@@ -30,10 +30,10 @@ const Form = () => {
       <Image
         className="w-20 h-9 mb-4"
         src="/serasa-logo-full.svg"
-        alt="Ir para página inicial"
+        alt="Logo"
         width={144}
         height={60}
-        title={'Ir para página inicial'}
+        title={'Logo'}
         loading='eager'
       />
       <DynamicText ariaLabel="Conte o quanto você está satisfeito com nossos serviços" level="p" title="Conte o quanto você está satisfeito com nossos serviços" className="mb-5 text-center text-dark-medium max-w-64">
@@ -52,7 +52,7 @@ const Form = () => {
               aria-label={`Estrela ${starIndex}`}
               type="button"
               key={starIndex}
-              className={`${starIndex <= rating ? 'text-magenta w-6 h-6' : 'text-magenta/50 w-6 h-6'} text-3xl leading-6 w-6 h-6 text-center overflow-hidden ease duration-300 outline-magenta/0 outline focus:outline-magenta/50 outline-offset-2 outline-4 rounded-lg`}
+              className={`${starIndex <= rating ? 'text-magenta w-12 h-12' : 'text-magenta/50 w-12 h-12'} text-3xl leading-6 w-12 h-12 text-center overflow-hidden ease duration-300 outline-magenta/0 outline focus:outline-magenta/50 outline-offset-0  outline-4 rounded-lg`}
               onClick={() => handleRating(starIndex)}
               onMouseEnter={() => handleRating(starIndex)}
               onMouseLeave={() => setRating(rating)}
@@ -68,7 +68,7 @@ const Form = () => {
           type="text"
           placeholder='Nome'
           required
-          className="w-52 p-2 border border-gray-300 ease duration-300 hover:border-magenta outline-magenta/0 outline focus:outline-magenta/50 outline-offset-2 outline-4 rounded-lg"
+          className="w-52 p-2 border border-gray-300 ease duration-300 hover:border-magenta outline-magenta/0 outline focus:outline-magenta/50 outline-offset-0 outline-4 rounded-lg"
           value={name}
           onChange={handleNameChange}
         />
@@ -78,7 +78,7 @@ const Form = () => {
         <input
           type="text"
           placeholder='Comentário (Opcional)'
-          className="w-52 p-2 border border-gray-300 ease duration-300 hover:border-magenta outline-magenta/0 outline focus:outline-magenta/50 outline-offset-2 outline-4 rounded-lg"
+          className="w-52 p-2 border border-gray-300 ease duration-300 hover:border-magenta outline-magenta/0 outline focus:outline-magenta/50 outline-offset-0 outline-4 rounded-lg"
           value={comment}
           onChange={(e) => setComment(e.target.value)}
         />
@@ -89,7 +89,7 @@ const Form = () => {
           role="button"
           aria-label="Enviar avaliação"
           type="submit"
-          className={`${isNameValid ? 'w-52 px-4 py-2 bg-magenta/90 text-light-light hover:bg-magenta' : 'w-52 px-4 py-2 bg-light-light text-dark-low '} body-bold sease duration-300 outline-magenta/0 outline focus:outline-magenta/50 outline-offset-2 outline-4 rounded-lg`}
+          className={`${isNameValid ? 'w-52 px-4 py-2 bg-magenta/90 text-light-light hover:bg-magenta' : 'w-52 px-4 py-2 bg-light-light text-dark-low '} body-bold sease duration-300 outline-magenta/0 outline focus:outline-magenta/50 outline-offset-0 outline-4 rounded-lg`}
           disabled={!isNameValid}
         >
           Enviar avaliação

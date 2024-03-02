@@ -22,7 +22,7 @@ const DynamicLink = ({ level = 'p', ariaLabel, title, children, className, href 
             href={href}
             title={title}
             aria-label={ariaLabel}
-            className={`ease duration-300 outline-magenta/0 outline focus:outline-magenta/50 outline-offset-2 outline-4 rounded-lg ${levelClasses} ${className || ''}`}
+            className={`ease duration-300 outline-magenta/0 outline focus:outline-magenta/50 outline-offset-0 outline-4 rounded-lg ${levelClasses} ${className || ''}`}
         >
             {children}
         </Link>

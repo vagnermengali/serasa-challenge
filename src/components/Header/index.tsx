@@ -13,6 +13,7 @@ const Header = () => {
                         width={144}
                         height={60}
                         title={'Ir para página inicial'}
+                        loading='eager'
                     />
                 </DynamicLink>
             </div>
