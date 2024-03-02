@@ -2,11 +2,9 @@ import React from 'react';
 import { DynamicTextInterface } from '@/interfaces/DynamicTextInterface';
 
 const DynamicText = ({ level = 'p', ariaLabel, title, children, className }: DynamicTextInterface) => {
-    const isHeading = level !== 'p' && level !== 'span';
+    const isHeading = level !== 'p';
     const isBold = level === 'p-bold';
-    const isSpan = level === 'span';
-    const isSpanBold = level === 'span-bold';
-    const ariaLevel = isHeading ? level : '';
+    const ariaLevel = isHeading ? level : null;
     const role = isHeading ? 'heading' : null;
 
     const levelClassMap: { [key: string]: string } = {
@@ -17,12 +15,10 @@ const DynamicText = ({ level = 'p', ariaLabel, title, children, className }: Dyn
         '5': 'heading-xs',
         '6': 'sub-heading',
         'p': 'body-regular',
-        'p-bold': 'body-bold',
-        'span': 'body-regular',
-        'span-bold': 'body-bold'
+        'p-bold': 'body-bold'
     };
 
-    const Tag = isBold ? 'p' : isSpan ? 'span' : isSpanBold ? 'span' : isHeading ? `h${level}` : 'p';
+    const Tag = isBold ? 'p' : isHeading ? `h${level}` : 'p';
 
     const tagProps = {
         role,
@@ -32,9 +28,23 @@ const DynamicText = ({ level = 'p', ariaLabel, title, children, className }: Dyn
         className: `${levelClassMap[level] || ''} ${className || ''}`,
     };
 
+    const tagPropsTwo = {
+        'aria-label': ariaLabel,
+        title,
+        className: `${levelClassMap[level] || ''} ${className || ''}`,
+    };
+
     return (
         <>
-            {React.createElement(Tag, tagProps, children)}
+            {!isHeading || isBold ? (
+                <>
+                    {React.createElement(Tag, tagPropsTwo, children)}
+                </>
+            ) : (
+                <>
+                    {React.createElement(Tag, tagPropsTwo, children)}
+                </>
+            )}
         </>
     );
 };
