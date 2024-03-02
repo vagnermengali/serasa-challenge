@@ -5,6 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 
 import DynamicText from "@/components/Ui/DynamicText";
 import Modal from '@/components/Modal';
+import DynamicInput from '@/components/Ui/DynamicInput';
 
 import { FormDataInterface } from '@/interfaces/FormDataInterface';
 import schemaRating from "@/validators/rating";
@@ -12,7 +13,7 @@ import schemaRating from "@/validators/rating";
 const Form = () => {
   const [showLoadingModal, setShowLoadingModal] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
-  const [rating, setRating] = useState<number>(0); // Defina rating como um número
+  const [rating, setRating] = useState<number>(0);
   const [name, setName] = useState('');
   const [comment, setComment] = useState('');
   const [isNameValid, setIsNameValid] = useState(false);
@@ -57,7 +58,6 @@ const Form = () => {
     }
   };
 
-
   const handleRating = (rate: number) => {
     setRating(rate);
     setIsNameValid(name.trim().length > 0 && rate > 0);
@@ -67,6 +67,11 @@ const Form = () => {
     const newName = e.target.value;
     setName(newName);
     setIsNameValid(newName.trim().length > 0 && rating > 0);
+  };
+
+  const handleCommentChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newComment = e.target.value;
+    setComment(newComment);
   };
 
   return (
@@ -110,30 +115,26 @@ const Form = () => {
             );
           })}
         </div>
-        <div className="flex flex-col mb-4 w-full">
-          <label className='body-bold mb-2'>Nome</label>
-          <input
-            {...register('name')}
-            type="text"
-            placeholder='Nome'
-            className={`w-full p-3 border border-gray-300 ease duration-300 outline-magenta/0 outline outline-offset-0 outline-4 rounded-lg ${errors.name ? 'border-red-600 focus:outline-red-600/50 hover:border-red-600  ' : 'focus:outline-magenta/50 hover:border-magenta'}`}
-            value={name}
-            onChange={handleNameChange}
-          />
-          {errors.name && <span className="label ease duration-300 text-red-600 mt-2">{errors.name.message}</span>}
-        </div>
-        <div className="flex flex-col mb-4 w-full">
-          <label className='body-bold mb-2'>Comentário (Opcional)</label>
-          <input
-            {...register('comment')}
-            type="text"
-            placeholder='Comentário (Opcional)'
-            className={`w-full p-3 border border-gray-300 ease duration-300 outline-magenta/0 outline outline-offset-0 outline-4 rounded-lg ${errors.comment ? 'border-red-600 focus:outline-red-600/50 hover:border-red-600  ' : 'focus:outline-magenta/50 hover:border-magenta'}`}
-            value={comment}
-            onChange={(e) => setComment(e.target.value)}
-          />
-          {errors.comment && <span className="label ease duration-300 text-red-600 mt-2">{errors.comment.message}</span>}
-        </div>
+        <DynamicInput
+          label="Nome"
+          type="text"
+          placeholder="Nome"
+          register={register}
+          registerName='name'
+          value={name}
+          onChange={handleNameChange}
+          errors={errors.name}
+        />
+        <DynamicInput
+          label="Comentário (Opcional)"
+          type="text"
+          placeholder="Comentário (Opcional)"
+          register={register}
+          registerName='comment'
+          value={comment}
+          onChange={handleCommentChange}
+          errors={errors.comment}
+        />
         <div className="text-center w-full">
           <button
             id="button"

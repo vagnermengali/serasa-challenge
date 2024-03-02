@@ -9,7 +9,8 @@ const schemaRating = yup.object().shape({
         .matches(/^[A-Za-z\s]+$/, "O nome deve conter apenas letras e espaços"),
     comment: yup
         .string()
-        .max(200, "O comentário deve ter no máximo 200 caracteres"),
+        .max(200, "O comentário deve ter no máximo 200 caracteres")
+        .default(''), 
 });
 
 export default schemaRating;

@@ -49,6 +49,7 @@ const config: Config = {
       backgroundImage: {
         'star-fill': "url(/star-fill.svg)",
         'star': "url(/star.svg)",
+        'alert': "url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxwYXRoIGZpbGw9IiNENjEwM0IiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTEyIDBjNi42MjcgMCAxMiA1LjM3MyAxMiAxMnMtNS4zNzMgMTItMTIgMTJTMCAxOC42MjcgMCAxMiA1LjM3MyAwIDEyIDB6bTAgMTVjLS44MjggMC0xLjUuNjcyLTEuNSAxLjVTMTEuMTcyIDE4IDEyIDE4czEuNS0uNjcyIDEuNS0xLjVTMTIuODI4IDE1IDEyIDE1em0wLTguNWMtLjgyOCAwLTEuNS42NzItMS41IDEuNXY0bC4wMDcuMTQ0Yy4wNzMuNzYxLjcxMyAxLjM1NiAxLjQ5MyAxLjM1Ni44MjggMCAxLjUtLjY3MiAxLjUtMS41VjhsLS4wMDctLjE0NEMxMy40MiA3LjA5NSAxMi43OCA2LjUgMTIgNi41eiIvPgo8L3N2Zz4K)"
       },
     },
   },
