@@ -8,11 +8,50 @@
 ---
 
 <div align="center">
+  <a href="#instalação">Instalação</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="#desafio-1---tipografia">Desafio 1 - Tipografia</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="#desafio-2---formulário">Desafio 2 - Formulário</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="#desafio-3---análise-do-blog">Desafio 3 - Análise do Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="#entrega">Entrega</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
+
+---
+
+# Instalação
+
+Para iniciar o projeto, siga os passos abaixo:
+
+1. Clone o repositório do GitHub:
+
+```bash
+git clone https://github.com/vagnermengali/serasa-challenge/
+```
+
+2. Navegue até o diretório clonado:
+
+```bash
+cd serasa-challenge
+```
+
+3. Instale as dependências utilizando o Yarn:
+
+```bash
+yarn install
+```
+
+4. Inicie o servidor de desenvolvimento:
+
+```bash
+yarn dev
+```
+
+5. Acesse o servidor:
+
+```bash
+http://localhost:3000
+```
+
+---
 
 ## Desafio 1 - Tipografia
 
