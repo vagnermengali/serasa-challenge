@@ -1,20 +1,24 @@
 import { useState } from 'react';
 import Image from "next/image";
 import { useForm } from 'react-hook-form';
+import { yupResolver } from "@hookform/resolvers/yup";
 
 import DynamicText from "@/components/Ui/DynamicText";
+import Modal from '@/components/Modal';
 
 import { FormDataInterface } from '@/interfaces/FormDataInterface';
-import Modal from '../Modal';
+import schemaRating from "@/validators/rating";
 
 const Form = () => {
   const [showLoadingModal, setShowLoadingModal] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
-  const [rating, setRating] = useState(0);
+  const [rating, setRating] = useState<number>(0); // Defina rating como um número
   const [name, setName] = useState('');
   const [comment, setComment] = useState('');
   const [isNameValid, setIsNameValid] = useState(false);
-  const { register, handleSubmit, reset, formState: { errors } } = useForm<FormDataInterface>();
+  const { register, handleSubmit, reset, formState: { errors } } = useForm<FormDataInterface>({
+    resolver: yupResolver(schemaRating)
+  });
 
   const onSubmit = async (data: FormDataInterface) => {
     const formDataWithRating = { ...data, rating };
@@ -46,8 +50,13 @@ const Form = () => {
     } finally {
       setShowLoadingModal(false);
       setShowSuccessModal(true);
+
+      setTimeout(() => {
+        setShowSuccessModal(false);
+      }, 3000);
     }
   };
+
 
   const handleRating = (rate: number) => {
     setRating(rate);
@@ -81,7 +90,7 @@ const Form = () => {
         <DynamicText ariaLabel="Marque de 1 à 5 estrelas" level="p-bold" title="Marque de 1 à 5 estrelas" className="mb-2 text-center text-dark-high">
           Marque de 1 à 5 estrelas
         </DynamicText>
-        <div className="flex justify-center items-center mb-4 gap-1">
+        <div className="flex justify-center items-center mb-4 gap-0">
           {[...Array(5)].map((_, index) => {
             const starIndex = index + 1;
             return (
@@ -104,15 +113,14 @@ const Form = () => {
         <div className="flex flex-col mb-4 w-full">
           <label className='body-bold mb-2'>Nome</label>
           <input
-            {...register('name', { required: true })}
+            {...register('name')}
             type="text"
             placeholder='Nome'
-            required
-            className="w-full p-3 border border-gray-300 ease duration-300 hover:border-magenta outline-magenta/0 outline focus:outline-magenta/50 outline-offset-0 outline-4 rounded-lg"
+            className={`w-full p-3 border border-gray-300 ease duration-300 outline-magenta/0 outline outline-offset-0 outline-4 rounded-lg ${errors.name ? 'border-red-600 focus:outline-red-600/50 hover:border-red-600  ' : 'focus:outline-magenta/50 hover:border-magenta'}`}
             value={name}
             onChange={handleNameChange}
           />
-          {errors.name && <span className="text-red-500">Este campo é obrigatório</span>}
+          {errors.name && <span className="label ease duration-300 text-red-600 mt-2">{errors.name.message}</span>}
         </div>
         <div className="flex flex-col mb-4 w-full">
           <label className='body-bold mb-2'>Comentário (Opcional)</label>
@@ -120,10 +128,11 @@ const Form = () => {
             {...register('comment')}
             type="text"
             placeholder='Comentário (Opcional)'
-            className="w-full p-3 border border-gray-300 ease duration-300 hover:border-magenta outline-magenta/0 outline focus:outline-magenta/50 outline-offset-0 outline-4 rounded-lg"
+            className={`w-full p-3 border border-gray-300 ease duration-300 outline-magenta/0 outline outline-offset-0 outline-4 rounded-lg ${errors.comment ? 'border-red-600 focus:outline-red-600/50 hover:border-red-600  ' : 'focus:outline-magenta/50 hover:border-magenta'}`}
             value={comment}
             onChange={(e) => setComment(e.target.value)}
           />
+          {errors.comment && <span className="label ease duration-300 text-red-600 mt-2">{errors.comment.message}</span>}
         </div>
         <div className="text-center w-full">
           <button
@@ -131,7 +140,7 @@ const Form = () => {
             role="button"
             aria-label="Enviar avaliação"
             type="submit"
-            className={`${isNameValid ? 'w-full p-3 bg-magenta/90 text-light-light hover:bg-magenta' : 'w-full p-3 bg-light-light text-dark-low '} body-bold sease duration-300 outline-magenta/0 outline focus:outline-magenta/50 outline-offset-0 outline-4 rounded-lg`}
+            className={`${isNameValid ? 'w-full p-3 bg-magenta/90 text-light-solid hover:bg-magenta' : 'w-full p-3 bg-light-light text-dark-low '} body-bold sease duration-300 outline-magenta/0 outline focus:outline-magenta/50 outline-offset-0 outline-4 rounded-lg`}
             disabled={!isNameValid}
           >
             Enviar avaliação

@@ -40,3 +40,7 @@
 .body-regular {
   @apply text-base leading-6 font-normal;
 }
+
+.label {
+  @apply text-xs leading-4 font-bold;
+}
