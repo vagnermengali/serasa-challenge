@@ -28,12 +28,15 @@ const Form = () => {
   return (
     <form onSubmit={handleSubmit} className="rounded-lg bg-light-solid w-[390px] h-[506px] flex flex-col items-center justify-center p-6 shadow-lg">
       <Image
+        id='logo-form'
+        role="logo"
+        aria-label='Logo Serasa'
         className="w-20 h-9 mb-4"
         src="/serasa-logo-full.svg"
-        alt="Ir para página inicial"
+        alt="Logo Serasa"
         width={144}
         height={60}
-        title={'Ir para página inicial'}
+        title={'Logo Serasa'}
         loading='eager'
       />
       <DynamicText ariaLabel="Conte o quanto você está satisfeito com nossos serviços" level="p" title="Conte o quanto você está satisfeito com nossos serviços" className="mb-5 text-center text-dark-medium max-w-64">
@@ -63,8 +66,13 @@ const Form = () => {
         })}
       </div>
       <div className="flex flex-col mb-5">
-        <label className='body-bold mb-2'>Nome</label>
+        <label id='label-nome'
+          role="label"
+          aria-label='Nome' className='body-bold mb-2'>Nome</label>
         <input
+          id='input-nome'
+          role="input"
+          aria-label='Nome'
           type="text"
           placeholder='Nome'
           required
@@ -74,8 +82,13 @@ const Form = () => {
         />
       </div>
       <div className="flex flex-col mb-5">
-        <label className='body-bold mb-2'>Comentário (Opcional)</label>
+        <label id='label-comentario'
+          role="label"
+          aria-label='Comentário (Opcional)' className='body-bold mb-2'>Comentário (Opcional)</label>
         <input
+          id='input-comentario'
+          role="input"
+          aria-label='Comentário (Opcional)'
           type="text"
           placeholder='Comentário (Opcional)'
           className="w-52 p-2 border border-gray-300 ease duration-300 hover:border-magenta outline-magenta/0 outline focus:outline-magenta/50 outline-offset-2 outline-4 rounded-lg"
