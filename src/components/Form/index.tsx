@@ -28,15 +28,12 @@ const Form = () => {
         body: JSON.stringify(formDataWithRating)
       });
 
-      setShowLoadingModal(false);
-
       if (!response.ok) {
         throw new Error('Erro ao enviar avaliação.');
       }
 
       const responseData = await response.json();
 
-      setShowSuccessModal(true);
       setRating(0);
       setName('');
       setComment('');
@@ -46,6 +43,9 @@ const Form = () => {
     } catch (error) {
       console.error('Erro ao enviar avaliação:', error);
       setShowLoadingModal(false);
+    } finally {
+      setShowLoadingModal(false);
+      setShowSuccessModal(true);
     }
   };
 
