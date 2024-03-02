@@ -1,32 +1,41 @@
 import { useState } from 'react';
 import Image from "next/image";
+import { useForm } from 'react-hook-form';
+
 import DynamicText from "@/components/Ui/DynamicText";
+
+import { FormDataInterface } from '@/interfaces/FormDataInterface';
 
 const Form = () => {
   const [rating, setRating] = useState(0);
   const [name, setName] = useState('');
   const [comment, setComment] = useState('');
   const [isNameValid, setIsNameValid] = useState(false);
+  const { register, handleSubmit, reset, formState: { errors } } = useForm<FormDataInterface>();
 
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    console.log('Avaliação:', rating);
-    console.log('Nome:', name);
-    console.log('Comentário:', comment);
+  const onSubmit = (data: FormDataInterface) => {
+    const formDataWithRating = { ...data, rating };
+    console.log(formDataWithRating);
+    setRating(0)
+    setName('')
+    setComment('')
+    reset();
+    return '';
   };
 
-  const handleRating = (rate: any) => {
+  const handleRating = (rate: number) => {
     setRating(rate);
+    setIsNameValid(name.trim().length > 0 && rate > 0);
   };
 
-  const handleNameChange = (e: any) => {
+  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newName = e.target.value;
     setName(newName);
-    setIsNameValid(newName.trim().length > 0);
+    setIsNameValid(newName.trim().length > 0 && rating > 0);
   };
 
   return (
-    <form onSubmit={handleSubmit} className="rounded-lg bg-light-solid w-[390px] h-auto flex flex-col items-center justify-center p-6 shadow-lg">
+    <form onSubmit={handleSubmit(onSubmit)} className="rounded-lg bg-light-solid w-[390px] h-auto flex flex-col items-center justify-center p-6 shadow-lg">
       <Image
         className="w-20 h-9 mb-4"
         src="/serasa-logo-full.svg"
@@ -65,6 +74,7 @@ const Form = () => {
       <div className="flex flex-col mb-5 w-full">
         <label className='body-bold mb-2'>Nome</label>
         <input
+          {...register('name', { required: true })}
           type="text"
           placeholder='Nome'
           required
@@ -72,10 +82,12 @@ const Form = () => {
           value={name}
           onChange={handleNameChange}
         />
+        {errors.name && <span className="text-red-500">Este campo é obrigatório</span>}
       </div>
       <div className="flex flex-col mb-5 w-full">
         <label className='body-bold mb-2'>Comentário (Opcional)</label>
         <input
+          {...register('comment')}
           type="text"
           placeholder='Comentário (Opcional)'
           className="w-full p-3 border border-gray-300 ease duration-300 hover:border-magenta outline-magenta/0 outline focus:outline-magenta/50 outline-offset-0 outline-4 rounded-lg"
