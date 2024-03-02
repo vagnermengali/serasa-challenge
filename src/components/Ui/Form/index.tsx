@@ -42,7 +42,7 @@ const Form = () => {
       <DynamicText ariaLabel="Marque de 1 à 5 estrelas" level="p-bold" title="Marque de 1 à 5 estrelas" className="mb-2 text-center text-dark-high">
         Marque de 1 à 5 estrelas
       </DynamicText>
-      <div className="flex justify-center mb-5 gap-1">
+      <div className="flex justify-center items-center mb-5 gap-1">
         {[...Array(5)].map((_, index) => {
           const starIndex = index + 1;
           return (
