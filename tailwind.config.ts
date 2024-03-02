@@ -45,7 +45,11 @@ const config: Config = {
         tight: '-0.0625rem',
         wide: '-0.05rem',
         wider: '-0.0375rem',
-      }
+      },
+      backgroundImage: {
+        'star-fill': "url(/star-fill.svg)",
+        'star': "url(/star.svg)",
+      },
     },
   },
   plugins: [],

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import DynamicLink from "@/components/Ui/Link";
+import DynamicLink from "@/components/Ui/DynamicLink";
 
 const Header = () => {
     return (

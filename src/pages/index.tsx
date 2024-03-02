@@ -1,8 +1,5 @@
-import Image from "next/image";
-
 import Layout from "@/components/Layout";
 import Form from "@/components/Ui/Form/index";
-import DynamicText from "@/components/Ui/DynamicText";
 
 const Homepage = () => {
   return (
@@ -10,34 +7,7 @@ const Homepage = () => {
       titleSeo="Serasa"
       descriptionSeo="A Serasa é lider em dados e soluções para empresas. Serasa Score de crédito,Consulta CNPJ, Proteção Antifraude e mais. Confira!"
     >
-      <Form>
-        <Image
-          className="w-20 h-9 mb-4"
-          src="/serasa-logo-full.svg"
-          alt="Ir para página inicial"
-          width={144}
-          height={60}
-          title={'Ir para página inicial'}
-        />
-        <DynamicText ariaLabel="" level="p" title="" className="mb-5 text-center text-dark-medium">Conte o quanto você está satisfeito com nossas serviços</DynamicText>
-        <DynamicText ariaLabel="" level="p-bold" title="" className="mb-2 text-center text-dark-high">Marque de 1 à 5 estrelas</DynamicText>
-        <div>
-          <button>O</button>
-          <button>O</button>
-          <button>O</button>
-          <button>O</button>
-          <button>O</button>
-        </div>
-        <div>
-          <label>Nome</label>
-          <input />
-        </div>
-        <div>
-          <label>Comentário(Opcional)</label>
-          <input />
-        </div>
-        <button>Enviar avaliação</button>
-      </Form>
+      <Form />
     </Layout>
   )
 };

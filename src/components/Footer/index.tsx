@@ -1,5 +1,5 @@
 import DynamicText from "@/components/Ui/DynamicText";
-import DynamicLink from "@/components/Ui/Link";
+import DynamicLink from "@/components/Ui/DynamicLink";
 
 const Footer = () => {
     return (
