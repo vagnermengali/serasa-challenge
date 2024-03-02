@@ -62,6 +62,7 @@ const Form = () => {
         <label className='body-bold mb-2'>Nome</label>
         <input
           type="text"
+          placeholder='Nome'
           required
           className="w-52 p-2 border border-gray-300 ease duration-300 hover:border-magenta outline-magenta/0 outline focus:outline-magenta/50 outline-offset-2 outline-4 rounded-lg"
           value={name}
@@ -72,6 +73,7 @@ const Form = () => {
         <label className='body-bold mb-2'>Comentário (Opcional)</label>
         <input
           type="text"
+          placeholder='Comentário (Opcional)'
           className="w-52 p-2 border border-gray-300 ease duration-300 hover:border-magenta outline-magenta/0 outline focus:outline-magenta/50 outline-offset-2 outline-4 rounded-lg"
           value={comment}
           onChange={(e) => setComment(e.target.value)}
