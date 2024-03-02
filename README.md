@@ -11,6 +11,7 @@
   <a href="#desafio-1---tipografia">Desafio 1 - Tipografia</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="#desafio-2---formulário">Desafio 2 - Formulário</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="#desafio-3---análise-do-blog">Desafio 3 - Análise do Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#entrega">Entrega</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 
 ## Desafio 1 - Tipografia
@@ -188,3 +189,48 @@ Minha proposta de arquitetura para o blog da Serasa visa abordar os desafios de 
 ## Conclusão
 
 A adoção dessa arquitetura proposta, juntamente com as tecnologias e práticas recomendadas, permitirá que o blog da Serasa atenda aos desafios e problemas apresentados, proporcionando uma melhor experiência para o usuário, melhorando o SEO, garantindo a acessibilidade, otimizando o tempo de carregamento das páginas e facilitando o gerenciamento de conteúdo.
+
+# Entrega
+
+## Projetos e Artigos
+
+### Projetos Desenvolvidos
+
+- [Vagner Mengali](https://vagnermengali.com/)
+- [Yrprey](https://yrprey.vercel.app/)
+- [Grupo Dogma](https://www.grupo-dogma.com/)
+- [Developer Blue Portfolio](https://developer-blue-portfolio.vercel.app/)
+- [Developer Green Portfolio](https://developer-green-portfolio.vercel.app/)
+
+---
+
+### Projetos em que Trabalhei e Tive Participação
+
+- [Pliemed](https://www.pliemed.com.br/)
+- [New Old Oficial](https://www.newoldoficial.com.br/)
+- [Marabraz](https://marabraz.com.br/)
+- [Soulier](https://www.soulier.com.br/)
+- [Sonho dos Pés Oficial](https://www.sonhodospesoficial.com.br/)
+- [Elegancy Design](https://www.elegancydesign.com.br/)
+- [Buckman Bck](https://www.buckmanbck.com.br/)
+- [King Joe](https://www.kingjoe.com.br/)
+- [Fitoxs](https://fitoxs.com/)
+- [Shop Makai](https://www.shopmakai.com.br/)
+- [Pneu Barato](https://www.pneubarato.com.br/)
+- [Cem Por Cento Cristão](https://www.cemporcentocristao.com.br/)
+- [Abrakadabra](https://www.abrakadabra.com.br/)
+- [Sapatella Oficial](https://www.sapatellaoficial.com.br/)
+- [Sestini](https://www.sestini.com.br/)
+- [Ad Lifestyle](https://www.adlifestyle.com.br/)
+- [TNG](https://www.tng.com.br/)
+- [Ladeira Armarinhos](https://www.ladeiraarmarinhos.com.br/)
+- [Black Skull USA](https://www.blackskullusa.com.br/)
+- [Toy Mania](https://www.toymania.com.br/)
+- [Highstil](https://www.highstil.com.br/)
+- [Barão Distribuidor](https://www.baraodistribuidor.com.br/)
+
+---
+
+## Feedback
+
+Gostei muito dos exercícios. Achei que a variedade tipográfica e de cores, juntamente com a liberdade de escolher quais stacks, frameworks e bibliotecas utilizar, torna o desafio muito mais interessante. Além disso, a opção de modificar o design também acrescenta uma sensação de liberdade criativa.
