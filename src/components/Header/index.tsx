@@ -7,11 +7,10 @@ const Header = () => {
             <div className="container mx-auto h-full w-full py-6 flex items-center justify-center">
                 <DynamicLink level="image" href="/" title="Ir para página inicial" ariaLabel="Ir para página inicial">
                     <Image
-                        className="w-28 h-11"
                         src="/serasa-logo-full.svg"
                         alt="Ir para página inicial"
-                        width={144}
-                        height={60}
+                        width={100}
+                        height={46.88}
                         title={'Ir para página inicial'}
                         loading='eager'
                     />
