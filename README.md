@@ -1,8 +1,8 @@
 # Desafio Serasa
 
 <div align="center">
-  <a href="https://serasa-challenge-vagnermengali.vercel.app/">Deploy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://pagespeed.web.dev/analysis/https-serasa-challenge-vagnermengali-vercel-app/w69fzkwo7c?form_factor=desktop">Perfomace</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://serasa-challenge-vagnermengali.vercel.app/" target="_blank">Deploy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://pagespeed.web.dev/analysis/https-serasa-challenge-vagnermengali-vercel-app/w69fzkwo7c?form_factor=desktop"   target="_blank">Perfomace</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 
 ---
