@@ -45,13 +45,16 @@ const Form = () => {
         title={'Logo'}
         loading='eager'
       />
-      <DynamicText ariaLabel="Conte o quanto você está satisfeito com nossos serviços" level="p" title="Conte o quanto você está satisfeito com nossos serviços" className="mb-5 text-center text-dark-medium max-w-64">
+      <DynamicText ariaLabel="Deixe sua avaliação" level="3" title="Deixe sua avaliação" className="mb-4 text-center text-dark-high">
+        Deixe sua avaliação
+      </DynamicText>
+      <DynamicText ariaLabel="Conte o quanto você está satisfeito com nossos serviços" level="p" title="Conte o quanto você está satisfeito com nossos serviços" className="mb-4 text-center text-dark-medium max-w-64">
         Conte o quanto você está satisfeito com nossos serviços
       </DynamicText>
       <DynamicText ariaLabel="Marque de 1 à 5 estrelas" level="p-bold" title="Marque de 1 à 5 estrelas" className="mb-2 text-center text-dark-high">
         Marque de 1 à 5 estrelas
       </DynamicText>
-      <div className="flex justify-center items-center mb-5 gap-1">
+      <div className="flex justify-center items-center mb-4 gap-1">
         {[...Array(5)].map((_, index) => {
           const starIndex = index + 1;
           return (
@@ -71,7 +74,7 @@ const Form = () => {
           );
         })}
       </div>
-      <div className="flex flex-col mb-5 w-full">
+      <div className="flex flex-col mb-4 w-full">
         <label className='body-bold mb-2'>Nome</label>
         <input
           {...register('name', { required: true })}
@@ -84,7 +87,7 @@ const Form = () => {
         />
         {errors.name && <span className="text-red-500">Este campo é obrigatório</span>}
       </div>
-      <div className="flex flex-col mb-5 w-full">
+      <div className="flex flex-col mb-4 w-full">
         <label className='body-bold mb-2'>Comentário (Opcional)</label>
         <input
           {...register('comment')}
