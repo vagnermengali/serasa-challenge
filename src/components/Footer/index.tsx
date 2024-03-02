@@ -3,7 +3,7 @@ import DynamicLink from "@/components/Ui/DynamicLink";
 
 const Footer = () => {
     return (
-        <footer className='bg-zinc-50  mt-auto'>
+        <footer className='bg-zinc-50 mt-auto'>
             <div className="container mx-auto py-4 flex flex-col justify-center items-center gap-2">
                 <DynamicText level="p" title="Texto Footer" ariaLabel="Texto Footer" className="text-dark-high">Nós protegemos a sua privacidade ❤</DynamicText>
                 <DynamicLink href="https://www.serasa.com.br/politicas-do-site" level="p-bold" ariaLabel="Link Footer" className="text-dark-medium" title="Link Footer" >Termos de uso e privacidade</DynamicLink>
@@ -12,4 +12,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;          
+export default Footer;

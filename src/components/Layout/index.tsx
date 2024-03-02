@@ -18,8 +18,8 @@ const Layout = ({ titleSeo, descriptionSeo, children }: LayoutInterface) => {
     <div className="flex justify-between flex-col min-h-screen">
       <style jsx global>{`
         * {
-              font-family: ${roboto.style.fontFamily};
-            }
+          font-family: ${roboto.style.fontFamily};
+        }
       `}</style>
       <Seo title={titleSeo} description={descriptionSeo} />
       <Header />
