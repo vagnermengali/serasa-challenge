@@ -185,9 +185,6 @@ Minha proposta de arquitetura para o blog da Serasa visa abordar os desafios de 
 - **Otimização de Imagens**: Compressão e otimização de imagens para reduzir o tempo de carregamento da página.
 - **Carregamento Lazy**: Implementação do carregamento lazy para adiar o carregamento de recursos não essenciais, melhorando a velocidade de carregamento da página inicial.
 
-#### Gerenciamento de Conteúdo:
-- **CMS Headless**: Utilização de um CMS Headless, como o Contentful ou Strapi, para gerenciamento flexível de conteúdo, separando a lógica de apresentação da lógica de conteúdo.
-
 ## Conclusão
 
 A adoção dessa arquitetura proposta, juntamente com as tecnologias e práticas recomendadas, permitirá que o blog da Serasa atenda aos desafios e problemas apresentados, proporcionando uma melhor experiência para o usuário, melhorando o SEO, garantindo a acessibilidade, otimizando o tempo de carregamento das páginas e facilitando o gerenciamento de conteúdo.
