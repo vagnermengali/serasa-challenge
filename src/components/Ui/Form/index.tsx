@@ -82,6 +82,9 @@ const Form = () => {
       </div>
       <div className="text-center">
         <button
+          id="button"
+          role="button"
+          aria-label="Enviar avaliação"
           type="submit"
           className={`${isNameValid ? 'w-52 px-4 py-2 bg-magenta/90 text-light-light hover:bg-magenta' : 'w-52 px-4 py-2 bg-light-light text-dark-low '} body-bold sease duration-300 outline-magenta/0 outline focus:outline-magenta/50 outline-offset-2 outline-4 rounded-lg`}
           disabled={!isNameValid}
