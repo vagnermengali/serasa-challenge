@@ -48,7 +48,7 @@ const Form = () => {
             <button
               type="button"
               key={starIndex}
-              className={`${starIndex <= rating ? 'text-magenta w-6 h-6' : 'text-light-light w-6 h-6'} ease duration-300 outline-magenta/0 outline focus:outline-magenta/50 outline-offset-2 outline-4 rounded-lg`}
+              className={`${starIndex <= rating ? 'text-magenta w-6 h-6' : 'text-magenta/50 w-6 h-6'} ease duration-300 outline-magenta/0 outline focus:outline-magenta/50 outline-offset-2 outline-4 rounded-lg`}
               onClick={() => handleRating(starIndex)}
               onMouseEnter={() => handleRating(starIndex)}
               onMouseLeave={() => setRating(rating)}
