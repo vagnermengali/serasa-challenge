@@ -22,14 +22,22 @@ const Modal = ({ type }: { type: string }) => {
                         {type === "success" ? (
                             <>
                                 <Image src="/favicon.webp" width={60} height={60} alt="Logo" className="contrast-0 mb-5" />
-                                <DynamicText level="3" ariaLabel="Avaliação enviada com sucesso!" title="Avaliação enviada com sucesso!" className="mb-5 text-center">Avaliação enviada com sucesso!</DynamicText>
-                                <DynamicText level="p" ariaLabel="Obrigado por avaliar nossos serviços" title="Estamos processando suas informações" className="text-center">Obrigado por avaliar nossos serviços</DynamicText>
+                                <DynamicText level="3" ariaLabel="Avaliação enviada com sucesso!" title="Avaliação enviada com sucesso!" className="mb-5 text-center">
+                                    Avaliação enviada com sucesso!
+                                </DynamicText>
+                                <DynamicText level="p" ariaLabel="Obrigado por avaliar nossos serviços" title="Estamos processando suas informações" className="text-center">
+                                    Obrigado por avaliar nossos serviços
+                                </DynamicText>
                             </>
                         ) : (
                             <>
                                 <Image src="/favicon.webp" width={60} height={60} alt="Logo" className="contrast-0 mb-5" />
-                                <DynamicText level="3" ariaLabel="Aguarde..." title="Aguarde..." className="text-center">Aguarde...</DynamicText>
-                                <DynamicText level="p" ariaLabel="Estamos processando suas informações" title="Estamos processando suas informações" className="text-center">Estamos processando suas informações</DynamicText>
+                                <DynamicText level="3" ariaLabel="Aguarde..." title="Aguarde..." className="text-center">
+                                    Aguarde...
+                                </DynamicText>
+                                <DynamicText level="p" ariaLabel="Estamos processando suas informações" title="Estamos processando suas informações" className="text-center">
+                                    Estamos processando suas informações
+                                </DynamicText>
                             </>
                         )}
                     </div>
