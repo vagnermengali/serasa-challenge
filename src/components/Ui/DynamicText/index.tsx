@@ -6,7 +6,7 @@ const DynamicText = ({ level = 'p', ariaLabel, title, children, className }: Dyn
     const isBold = level === 'p-bold';
     const isSpan = level === 'span';
     const isSpanBold = level === 'span-bold';
-    const ariaLevel = isHeading ? level : null;
+    const ariaLevel = isHeading ? level : '';
     const role = isHeading ? 'heading' : null;
 
     const levelClassMap: { [key: string]: string } = {
