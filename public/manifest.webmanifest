@@ -14,25 +14,25 @@
             "src": "/serasa-logo-full.webp",
             "sizes": "32x32",
             "type": "image/webp",
-            "purpose": "maskable"
+            "purpose": "any"
         },
         {
             "src": "/serasa-logo-full.webp",
             "sizes": "48x48",
             "type": "image/webp",
-            "purpose": "maskable"
+            "purpose": "any"
         },
         {
             "src": "/serasa-logo-full.webp",
             "sizes": "96x96",
             "type": "image/webp",
-            "purpose": "maskable"
+            "purpose": "any"
         },
         {
             "src": "/serasa-logo-full.webp",
             "sizes": "144x144",
             "type": "image/webp",
-            "purpose": "maskable"
+            "purpose": "any"
         }
     ],
     "related_applications": [
