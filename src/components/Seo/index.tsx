@@ -38,7 +38,7 @@ const Seo = ({ title, description }: SeoInterface) => {
       <meta name="msapplication-navbutton-color" content="#E63888" />
       <meta name="apple-mobile-web-app-status-bar-style" content="#E63888" />
       <link rel="manifest" href={"/manifest.webmanifest"} />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content="noindex"/> 
     </Head>
   );
 };
