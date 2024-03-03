@@ -33,6 +33,11 @@ const Seo = ({ title, description }: SeoInterface) => {
       <meta property="al:android:app_name" content="Serasa" />
       <meta property="al:android:url" content="https://www.serasaexperian.com.br/" />
       <link rel="canonical" href="https://www.serasaexperian.com.br/" />
+      <meta name="theme-color" content="#E63888" />
+      <meta name="msapplication-TileColor" content="#E63888" />
+      <meta name="msapplication-navbutton-color" content="#E63888" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="#E63888" />
+      <link rel="manifest" href={"/manifest.webmanifest"} />
     </Head>
   );
 };
