@@ -251,7 +251,7 @@ A adoção dessa arquitetura proposta, juntamente com as tecnologias e práticas
 - [Soulier](https://www.soulier.com.br/)
 - [Sonho dos Pés Oficial](https://www.sonhodospesoficial.com.br/)
 - [Elegancy Design](https://www.elegancydesign.com.br/)
-- [Buckman Bck](https://www.buckmanbck.com.br/)
+- [Buckman](https://www.buckmanbck.com.br/)
 - [King Joe](https://www.kingjoe.com.br/)
 - [Fitoxs](https://fitoxs.com/)
 - [Shop Makai](https://www.shopmakai.com.br/)
