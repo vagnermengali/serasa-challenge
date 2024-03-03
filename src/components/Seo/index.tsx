@@ -38,7 +38,18 @@ const Seo = ({ title, description }: SeoInterface) => {
       <meta name="msapplication-navbutton-color" content="#E63888" />
       <meta name="apple-mobile-web-app-status-bar-style" content="#E63888" />
       <link rel="manifest" href={"/manifest.webmanifest"} />
-      <meta name="robots" content="noindex"/> 
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+                document.addEventListener('DOMContentLoaded', function() {
+                  var metaTag = document.querySelector('meta[name="robots"]');
+                  if (metaTag && metaTag.getAttribute('content') === 'noindex') {
+                    metaTag.remove();
+                  }
+                });
+              `,
+        }}
+      />
     </Head>
   );
 };
