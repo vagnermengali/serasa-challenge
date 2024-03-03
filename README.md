@@ -181,7 +181,7 @@ Exemplo de uso:
 
 ```jsx
 <DynamicText
-    level="h2"
+    level="2"
     ariaLabel="Título da seção"
     title="Título da Seção"
 >
