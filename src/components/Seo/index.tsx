@@ -50,6 +50,7 @@ const Seo = ({ title, description }: SeoInterface) => {
               `,
         }}
       />
+      <meta name="robots" content="index,follow"></meta>
     </Head>
   );
 };
