@@ -222,7 +222,7 @@ Minha proposta de arquitetura para o blog da Serasa visa abordar os desafios de 
 - **A11y**: Implementação de práticas de acessibilidade (A11y), como alt text em imagens, foco visível em elementos interativos e estruturação correta do conteúdo.
 
 #### Performance:
-- **Otimização de Imagens**: Compressão e otimização de imagens para reduzir o tempo de carregamento da página.
+- **Otimização de Imagens para webp**: Compressão e otimização de imagens para webp para reduzir o tempo de carregamento da página.
 - **Carregamento Lazy**: Implementação do carregamento lazy para adiar o carregamento de recursos não essenciais, melhorando a velocidade de carregamento da página inicial.
 
 ## Conclusão
