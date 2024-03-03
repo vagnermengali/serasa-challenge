@@ -140,7 +140,7 @@ Embora inicialmente tenha sido desenvolvido apenas o frontend, no final o projet
 
 ### DynamicInput
 
-Este componente é utilizado para criar inputs dinâmicos, com suporte a validação de erros e labels.
+Este componente é utilizado para criar inputs dinâmicos com react-hook-form, com suporte a validação de erros e labels junto ao yup.
 
 Exemplo de uso:
 
