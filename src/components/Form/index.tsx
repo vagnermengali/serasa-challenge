@@ -79,7 +79,7 @@ const Form = () => {
             <form onSubmit={handleSubmit(onSubmit)} className="rounded-lg bg-light-solid w-[390px] h-auto flex flex-col items-center justify-center p-6 shadow-lg">
                 <Image
                     className="w-20 h-9 mb-4"
-                    src="/serasa-logo-full.svg"
+                    src="/serasa-logo-full.webp"
                     alt="Logo"
                     width={144}
                     height={60}

@@ -7,7 +7,7 @@ const Header = () => {
             <div className="container mx-auto h-full w-full py-6 flex items-center justify-center">
                 <DynamicLink level="image" href="/" title="Ir para página inicial" ariaLabel="Ir para página inicial">
                     <Image
-                        src="/serasa-logo-full.svg"
+                        src="/serasa-logo-full.webp"
                         alt="Ir para página inicial"
                         width={100}
                         height={46.88}
