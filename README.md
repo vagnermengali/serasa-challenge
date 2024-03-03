@@ -109,7 +109,7 @@ const WelcomeMessage = () => {
       </DynamicText>
 
       {/* Parágrafo regular com destaque em magenta */}
-      <DynamicText level="p" title="Texto regular" ariaLabel="Texto de exemplo" className="magenta">
+      <DynamicText level="p" title="Texto regular" ariaLabel="Texto de exemplo" className="text-magenta">
         Este é um exemplo de utilização do componente DynamicText.
       </DynamicText>
     </div>
