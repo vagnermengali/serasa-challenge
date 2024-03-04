@@ -1,6 +1,8 @@
 # Desafio Serasa
 
-[![Banner](https://github.com/vagnermengali/developer-green-portfolio/blob/main/public/perfomace.png)](https://pagespeed.web.dev/analysis/https-serasa-challenge-vagnermengali-vercel-app/a5i1ffpe59?form_factor=desktop)
+<div align="center">
+  [![Banner](https://github.com/vagnermengali/serasa-challenge/blob/main/public/perfomace-speed.png)](https://pagespeed.web.dev/analysis/https-serasa-challenge-vagnermengali-vercel-app/a5i1ffpe59?form_factor=desktop)
+</div>
 
 <div align="center">
   <a href="https://serasa-challenge-vagnermengali.vercel.app/" target="_blank">Deploy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
