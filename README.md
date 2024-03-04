@@ -1,7 +1,7 @@
 # Desafio Serasa
 
 <div align="center">
-  [![Banner](https://github.com/vagnermengali/serasa-challenge/blob/main/public/perfomace-speed.webp)](https://pagespeed.web.dev/analysis/https-serasa-challenge-vagnermengali-vercel-app/a5i1ffpe59?form_factor=desktop)
+  [![Banner](https://github.com/vagnermengali/serasa-challenge/blob/main/public/perfomace.webp)](https://pagespeed.web.dev/analysis/https-serasa-challenge-vagnermengali-vercel-app/a5i1ffpe59?form_factor=desktop)
 </div>
 
 <div align="center">
