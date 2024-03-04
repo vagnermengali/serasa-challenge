@@ -1,22 +1,7 @@
 import Head from "next/head";
-import { useEffect } from "react";
 import { SeoInterface } from "@/interfaces/SeoInterface";
 
 const Seo = ({ title, description }: SeoInterface) => {
-  useEffect(() => {
-    // Função para remover a diretiva noindex
-    const removeNoindexTag = () => {
-      const metaTags = document.getElementsByTagName('meta');
-      for (let i = 0; i < metaTags.length; i++) {
-        if (metaTags[i]?.getAttribute('name') === 'robots' && metaTags[i]?.getAttribute('content') === 'noindex') {
-          metaTags[i]?.parentNode?.removeChild(metaTags[i]);
-        }
-      }
-    }
-
-    // Chama a função para remover a diretiva noindex quando o componente for montado
-    removeNoindexTag();
-  }, []); // Executa apenas uma vez após o montagem do componente
 
   return (
     <Head>
@@ -54,6 +39,7 @@ const Seo = ({ title, description }: SeoInterface) => {
       <meta name="msapplication-navbutton-color" content="#E63888" />
       <meta name="apple-mobile-web-app-status-bar-style" content="#E63888" />
       <link rel="manifest" href={"/manifest.webmanifest"} />
+      <meta name="robots" content="noindex" />
     </Head>
   );
 };
