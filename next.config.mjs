@@ -3,12 +3,15 @@ const nextConfig = {
   reactStrictMode: true,
   async headers() {
     const headers = [];
-    if (process.env.NEXT_PUBLIC_VERCEL_ENV !== "production") {
+    // Condição para verificar se não é ambiente de produção
+    if (process.env.NEXT_PUBLIC_VERCEL_ENV !== 'production') {
+      // Remove a tag X-Robots-Tag dos cabeçalhos
       headers.push({
+        source: '/:path*', // Ou você pode especificar a origem que deseja
         headers: [
           {
-            key: "X-Robots-Tag",
-            value: "index, follow",
+            key: 'X-Robots-Tag',
+            value: '', // Valor vazio para remover o cabeçalho
           },
         ],
       });
