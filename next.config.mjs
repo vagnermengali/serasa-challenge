@@ -2,9 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   async headers() {
-    const headers = [];
-    if (process.env.NEXT_PUBLIC_VERCEL_ENV !== "production") {
-      headers.push({
+    return [
+      {
         source: "/:path*",
         headers: [
           {
@@ -12,9 +11,8 @@ const nextConfig = {
             value: "index, follow",
           },
         ],
-      });
-    }
-    return headers;
+      },
+    ];
   },
 };
 
