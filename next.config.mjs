@@ -11,7 +11,7 @@ const nextConfig = {
         headers: [
           {
             key: 'X-Robots-Tag',
-            value: '', // Valor vazio para remover o cabeçalho
+            value: 'index, follow', // Valor vazio para remover o cabeçalho
           },
         ],
       });
