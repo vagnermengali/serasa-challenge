@@ -1,4 +1,6 @@
-# Desafio Serasa
+<h1 align="center">
+  Desafio Serasa
+</h1>
 
 <div align="center">
   <img src='https://github.com/vagnermengali/serasa-challenge/blob/main/public/perfomace.webp'/>
