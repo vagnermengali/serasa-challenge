@@ -4,8 +4,8 @@ import Form from "@/components/Form";
 const Homepage = () => {
   return (
     <Layout
-      titleSeo="Serasa"
-      descriptionSeo="A Serasa é lider em dados e soluções para empresas. Serasa Score de crédito,Consulta CNPJ, Proteção Antifraude e mais. Confira!"
+      titleSeo="Desafio Serasa | Vagner Mengali"
+      descriptionSeo="Desafio do Serasa, feito por Vagner Mengali utilizando as tecnologias TypeScript, Next.js e Tailwind."
     >
       <Form />
     </Layout>
