@@ -5,7 +5,7 @@ const Homepage = () => {
   return (
     <Layout
       titleSeo="Desafio Serasa | Vagner Mengali"
-      descriptionSeo="Desafio do Serasa, feito por Vagner Mengali utilizando as tecnologias TypeScript, Next.js e Tailwind."
+      descriptionSeo="Desafio Serasa, feito por Vagner Mengali utilizando as tecnologias TypeScript, Next.js e Tailwind."
     >
       <Form />
     </Layout>
