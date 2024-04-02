@@ -77,8 +77,8 @@ const Form = () => {
     return (
         <>
             <form onSubmit={handleSubmit(onSubmit)} className="rounded-lg bg-light-solid w-[390px] h-auto flex flex-col items-center justify-center p-6 shadow-lg">
-                <DynamicText ariaLabel="Desafio Serasa | Vagner Mengali" level="1" title="Desafio Serasa | Vagner Mengali" className="hidden">
-                    Desafio Serasa | Vagner Mengali
+                <DynamicText ariaLabel="Desafio Serasa, feito por Vagner Mengali utilizando as tecnologias TypeScript, Next.js e Tailwind." level="1" title="Desafio Serasa, feito por Vagner Mengali utilizando as tecnologias TypeScript, Next.js e Tailwind." className="hidden">
+                    Desafio Serasa, feito por Vagner Mengali utilizando as tecnologias TypeScript, Next.js e Tailwind.
                 </DynamicText>
                 <Image
                     className="w-20 h-9 mb-4"
