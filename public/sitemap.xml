@@ -5,7 +5,7 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
    <url>
-      <loc>https://serasa-challenge-vagnermengali.vercel.app/</loc>
+      <loc>https://vagnermengali.github.io/serasa-challenge/</loc>
       <lastmod>2024-03-03</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
