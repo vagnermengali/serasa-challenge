@@ -82,7 +82,7 @@ const Form = () => {
                 </DynamicText>
                 <Image
                     className="w-20 h-9 mb-4"
-                    src="/serasa-logo-full.webp"
+                    src="./assets/serasa-logo-full.webp"
                     alt="Logo"
                     width={144}
                     height={60}
