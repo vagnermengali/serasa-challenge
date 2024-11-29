@@ -4,7 +4,7 @@
 
 [![Banner](https://github.com/vagnermengali/serasa-challenge/blob/main/public/assets/perfomace.webp)](https://pagespeed.web.dev/analysis/https-serasa-challenge-vagnermengali-vercel-app/a5i1ffpe59?form_factor=desktop)
 
-[![Banner](https://github.com/vagnermengali/serasa-challenge/blob/main/public/assets/banner-github.png)](https://serasa-challenge-vagnermengali.vercel.app/)
+[![Banner](https://github.com/vagnermengali/serasa-challenge/blob/main/public/assets/banner-github.png)](https://vagnermengali.github.io/serasa-challenge/)
 
 <div align="center">
    <a href="#documentação-em-português">Leia em Português |</a>
